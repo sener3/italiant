@@ -226,6 +226,17 @@ textarea {
     width: 100%;
 }
 
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    padding-left: 5px;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
 textarea {
     resize: none;
     height: 200px;
